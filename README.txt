@@ -1,4 +1,4 @@
->>>>>>>>> AI-POWERED CODE AUTOCOMPLETE >>>>>>>>>>>>>>
+>>>>>>>>> AI-POWERED CODE AUTOCOMPLETE >>>>>>>>>
 
 # Overview
 This project implements an AI-powered code autocomplete tool using the GPT-2 language model, fine-tuned on a dataset of code snippets to generate relevant code suggestions and completions.

@@ -1,4 +1,4 @@
->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> AI-POWERED CODE AUTOCOMPLETE >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+>>>>>>>>> AI-POWERED CODE AUTOCOMPLETE >>>>>>>>>>>>>>
 
 # Overview
 This project implements an AI-powered code autocomplete tool using the GPT-2 language model, fine-tuned on a dataset of code snippets to generate relevant code suggestions and completions.
@@ -26,24 +26,24 @@ This project fine-tunes a GPT-2 model for code autocompletion using the Hugging 
 
 # Setup and Installation
 
-1. **Clone the repository**:
+1. Clone the repository:
    ```bash
    git clone https://github.com/yourusername/projectDOD.git
    cd projectDOD
    ```
 
-2. **Set up a virtual environment** (optional but recommended):
+2. Set up a virtual environment (optional but recommended):
    ```bash
    python -m venv venv
    source venv/bin/activate   # On Windows: venv\Scripts\activate
    ```
 
-3. **Install dependencies**:
+3. Install dependencies:
    ```bash
    pip install -r requirements.txt
    ```
 
-4. **Download the Pretrained Model and Dataset**
+4. Download the Pretrained Model and Dataset
    - In your code, use `transformers` to automatically download the GPT-2 model and datasets on first use, eliminating the need to store them in the repository.
 
 # Running the Project
@@ -88,27 +88,27 @@ This section explains the structure, configuration, and usage of the GPT-2 model
 
 The script responsible for fine-tuning the GPT-2 model on a custom dataset is `projectDOD.py`. This script performs the following:
 
-- **Loads a pre-trained GPT-2 model**: The model is loaded using the `transformers` library from Hugging Face.
-- **Loads and preprocesses the dataset**: The dataset used for fine-tuning is the `codeparrot/codeparrot-clean` dataset.
-- **Tokenizes the dataset**: The dataset is tokenized for feeding into the model.
-- **Fine-tunes the GPT-2 model**: The script uses the Hugging Face `Trainer` to fine-tune the model.
-- **Saves the trained model and tokenizer locally**: After training, the model and tokenizer are saved locally for later use.
+- Loads a pre-trained GPT-2 model: The model is loaded using the `transformers` library from Hugging Face.
+- Loads and preprocesses the dataset: The dataset used for fine-tuning is the `codeparrot/codeparrot-clean` dataset.
+- Tokenizes the dataset: The dataset is tokenized for feeding into the model.
+- Fine-tunes the GPT-2 model: The script uses the Hugging Face `Trainer` to fine-tune the model.
+- Saves the trained model and tokenizer locally: After training, the model and tokenizer are saved locally for later use.
 
 # Configuration Files:
 No external configuration files are required for this project since all model parameters and training configurations are directly defined within `projectDOD.py`. However, you can tweak the following parameters as needed:
 
-- **Learning Rate**: Set in the `TrainingArguments` (e.g., `learning_rate=5e-5`).
-- **Batch Size**: Defined in `TrainingArguments` (e.g., `per_device_train_batch_size=4` and `per_device_eval_batch_size=8`).
-- **Number of Epochs**: Defined in `TrainingArguments` (e.g., `num_train_epochs=3`).
+- Learning Rate: Set in the `TrainingArguments` (e.g., `learning_rate=5e-5`).
+- Batch Size: Defined in `TrainingArguments` (e.g., `per_device_train_batch_size=4` and `per_device_eval_batch_size=8`).
+- Number of Epochs: Defined in `TrainingArguments` (e.g., `num_train_epochs=3`).
 
 These settings can be adjusted based on available computational resources or project needs.
 
-#Saving and Loading the Model:
+# Saving and Loading the Model:
 
 After training, the model and tokenizer are saved locally using the following methods:
 
-- **Model**: `model.save_pretrained("path/to/save/model")`
-- **Tokenizer**: `tokenizer.save_pretrained("path/to/save/tokenizer")`
+- Model: `model.save_pretrained("path/to/save/model")`
+- Tokenizer: `tokenizer.save_pretrained("path/to/save/tokenizer")`
 
 You can load these saved models later for inference or further fine-tuning.
 

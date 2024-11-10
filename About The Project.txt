@@ -1,0 +1,27 @@
+
+**About This Project**
+
+This project, AI-Powered Code Autocomplete, is my first dive into AI on a personal level. As someone passionate about learning and building with technology, I set out to create a tool that could automatically complete code using the GPT-2 language model. Through this journey, I’ve learned a lot—both about AI model fine-tuning and about how to work with tools like Hugging Face Transformers and large datasets.
+
+**What I’ve Learned:**
+
+- **AI Model Fine-Tuning:** I had the chance to fine-tune a pre-trained GPT-2 model with a dataset focused on code. This helped improve the model’s ability to suggest code completions in a more accurate and meaningful way.
+  
+- **Transformers Library:** I got hands-on experience with the Hugging Face Transformers library, which is widely used in the field of natural language processing. It’s a tool that’s become central to AI development.
+  
+- **Dataset Management:** I learned how to handle large datasets—loading, preprocessing, and tokenizing them—which is a critical skill in AI work.
+  
+- **Python & Libraries:** Working with Python in this project deepened my knowledge of several key libraries, such as transformers, datasets, and torch. I also got practical experience in building and running training loops using the Trainer class.
+
+**Challenges I Faced:**
+
+- **Handling Large Models:** The size of the model and dataset posed a big challenge, especially in terms of storage. I had to rethink how I manage the data to avoid running out of space while still keeping everything accessible.
+  
+- **Environment Setup:** Setting everything up, from dependencies to virtual environments, took more time than expected. But in the end, it gave me valuable experience in managing environments for more complex projects.
+
+- **Debugging Issues:** The fine-tuning process didn’t come without its errors. I encountered some compatibility issues and other bugs, but working through them taught me a lot about how important it is to really understand the tools and libraries I’m using.
+
+**Space Issues:**
+
+With the large datasets and model sizes, disk space became a significant issue. I had to get creative to keep the project running smoothly without constantly hitting storage limits.
+
